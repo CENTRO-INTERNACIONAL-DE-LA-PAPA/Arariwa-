@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:paddingTop="15dp"
+    tools:context=".AppInfo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="12"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical"
+        android:padding="8dp">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:background="#5FFF"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/lbl_info_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingTop="10dp"
+            android:text="JUEGO DE RUEDAS"
+            android:textSize="16sp"
+            android:paddingBottom="10dp"
+            android:textStyle="bold" />
+        <View android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/colorPlomo"/>
+        <TextView
+            android:id="@+id/lbl_info_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingTop="10dp"
+            android:text="Aplicativo para la aplicación de fungicidas en el manejo de la rancha de la papa"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="#9FFF"
+            android:paddingBottom="20dp"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/lbl_info_descripcion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingTop="10dp"
+                android:text="Esta herramienta te permitirá hacer aplicaciones de fungicidas solo cuando sea necesario y de acuerdo a la variedad de papa que sembraste."
+                android:textSize="12dp" />
+        </LinearLayout>
+    </LinearLayout>
+<LinearLayout
+    android:id="@+id/layout_masinfo"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal|center_vertical"
+        android:paddingBottom="5dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/web" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:autoLink="all"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:paddingRight="10dp"
+                android:text="https://cipotato.org/"
+                android:textSize="12dp" />
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/email"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+
+                    android:textSize="12dp"
+                    android:autoLink="all"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:text="w.perez@cgiar.org"/>
+            </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:gravity="bottom|center_horizontal"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/copyrigth"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="30dp"
+            android:textSize="10dp"
+            android:text="2019 © Centro Internacional de la Papa. Todos los derechos reservados."/>
+    </RelativeLayout>
+</LinearLayout>
+
+</LinearLayout>

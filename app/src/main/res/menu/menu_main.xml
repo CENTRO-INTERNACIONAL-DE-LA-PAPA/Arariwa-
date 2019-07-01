@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/switchidioma"
+        android:orderInCategory="2"
+        android:title=""
+        app:showAsAction="always"
+        android:actionLayout="@layout/switch_idioma"
+        />
+    <item
+        android:id="@+id/menu_info"
+        android:orderInCategory="3"
+        android:title=""
+        app:showAsAction="always"
+        android:icon="@drawable/icoinfo">
+
+    </item>
+    <!--<item
+        android:id="@+id/action_español"
+        android:orderInCategory="2"
+        android:title="Español"
+        app:showAsAction="never" />
+    <item android:id="@+id/action_ingles"
+        android:orderInCategory="1"
+        android:title="Ingles"
+        app:showAsAction="never"/>-->
+</menu>

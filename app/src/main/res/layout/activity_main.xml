@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:id="@+id/layout_main">
+    <ImageView
+        android:id="@+id/imageView"
+        android:src="@drawable/info_fondo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerInside"
+        android:adjustViewBounds="true"
+        android:layout_marginLeft="-20dp"
+        android:layout_marginRight="-20dp"
+        android:layout_marginTop="-70dp"
+        android:layout_marginBottom="-100dp" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:onClick="verde_click"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/colorVerdeFondo"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingBottom="2dp">
+
+                <TextView
+                    android:id="@+id/lbl_verde_titulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Variedades Resistentes"
+                    android:textAlignment="center"
+                    android:textColor="#FFFF"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PERU: "
+                        android:visibility="gone"
+                        android:textColor="#FFFF"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/lbl_verde_peru"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Canchan, Chaska, Tomasa, Yungay."
+                        android:textColor="#FFFF" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#ffffff" />
+                <TextView
+                    android:id="@+id/lbl_verde_subtitulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="11dp"
+                    android:gravity="center_vertical"
+                    android:text="Valor en la Escala de Susceptibilidad (0, 1, 2)"
+                    android:textAlignment="center"
+                    android:textColor="#FFFF" />
+
+
+                <!--
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ECUADOR: "
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lbl_verde_ecuador"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="I-Victoria, Libertad, I-Puka Shungo, Carolina" />
+            </LinearLayout>-->
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:background="?attr/selectableItemBackground"
+                android:src="@drawable/main_verde" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:onClick="amarillo_click"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAmarillo"
+                android:orientation="vertical"
+                android:paddingBottom="2dp">
+
+                <TextView
+                    android:id="@+id/lbl_amarillo_titulo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="Variedades Moderadamente Resistentes"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPlomo"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PERU: "
+                        android:visibility="gone"
+                        android:textColor="@color/colorPlomo"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/lbl_amarillo_peru"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Canchan, Chaska, Tomasa, Yungay."
+                        android:textColor="@color/colorPlomo" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/colorPrimary" />
+                <TextView
+                    android:id="@+id/lbl_amarillo_subtitulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="11dp"
+                    android:gravity="center_vertical"
+                    android:text="Valor en la Escala de Susceptibilidad (0, 1, 2)"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPlomo" />
+
+                <!--LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ECUADOR: "
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lbl_amarillo_ecuador"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="I-Victoria, Libertad, I-Puka Shungo, Carolina" />
+            </LinearLayout>-->
+            </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:background="?attr/selectableItemBackground"
+                android:src="@drawable/main_amarillo" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="rojo_click"
+            android:orientation="vertical"
+            android:background="?attr/selectableItemBackground">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorRojoFondoTitulo"
+                android:orientation="vertical"
+                android:paddingBottom="2dp">
+
+                <TextView
+                    android:id="@+id/lbl_rojo_titulo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Varitedades Susceptibles"
+                    android:textAlignment="center"
+                    android:textSize="16dp"
+                    android:textColor="@android:color/background_light"
+                    android:textStyle="bold" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PERU: "
+                        android:visibility="gone"
+                        android:textColor="@android:color/background_light"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/lbl_rojo_peru"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Canchan, Chaska, Tomasa, Yungay."
+                        android:textColor="@android:color/background_light" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#ffffff" />
+
+                <TextView
+                    android:id="@+id/lbl_rojo_subtitulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="11dp"
+                    android:gravity="center_vertical"
+                    android:text="Valor en la Escala de Susceptibilidad (0, 1, 2)"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_light" />
+
+
+                <!--LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ECUADOR: "
+                    android:textColor="@android:color/background_light"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lbl_rojo_ecuador"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="I-Victoria, Libertad, I-Puka Shungo, Carolina"
+                    android:textColor="@android:color/background_light" />
+            </LinearLayout-->
+            </LinearLayout>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:src="@drawable/main_rojo" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.constraint.ConstraintLayout>

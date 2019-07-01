@@ -1,0 +1,75 @@
+{
+  "Titulo":"Juego de Ruedas", "Title": "Game of wheels",
+  "Paso1":"Escoge la rueda según tu papa sembrada", "Step1":"Choose the roulette according to your sown potato",
+  "VariedadResistente":[{
+    "Idioma":1,
+    "Titulo": "Variedades Resistentes",
+    "SubTitulo":"Valor en la Escala de Susceptibilidad (0, 1, 2)",
+    "PeruVariedad":"Canchan, Chaska, Tomasa, Yungay.",
+    "EcuadorVariedad":"I-Victoria, Libertad, I-Puka Shungo, Carolina",
+    "MetodoEvaluacion":"Evaluación por cada 11 días",
+    "QueAplicar":"Fosfito de potasio,Propineb,Mancozeb,Hidróxido de cobre",
+    "QueAplicar2":"Cymoxanil,Dimethomorph,Fenamidone,Fluopicolide,Fosetyl-Al,Improvalicarb,Mandipropamid,Mefenoxam,Metiram"
+  }, {
+    "Idioma":2,
+    "Titulo": "Resistant Varities",
+    "SubTitulo":"Value in Susceptibility Scale (0, 1, 2)",
+    "PeruVariedad":"Canchan, Chaska, Tomasa, Yungay.",
+    "EcuadorVariedad":"I-Victoria, Libertad, I-Puka Shungo, Carolina",
+    "MetodoEvaluacion":"Evaluation for every 11 days",
+    "QueAplicar":"Di potassium phosphite,Propineb,Mancozeb,Cooper Hydroxide",
+    "QueAplicar2":"Cymoxanil,Dimethomorph,Fenamidone,Fluopicolide,Fosetyl-Al,Improvalicarb,Mandipropamid,Mefenoxam,Metiram"
+  }
+  ],
+  "VariedadIntermedio":[{
+    "Idioma":1,
+    "Titulo": "Variedades Moderadamente Resistentes",
+    "SubTitulo":"Valor en la Escala de Susceptibilidad (3, 4, 5)",
+    "PeruVariedad":"Amarilis, Liberteña, Perricholi, Unica.",
+    "EcuadorVariedad":"I-Raymipapa, I-Fripapa, I-Estela, Unica, I-Natividad, I Catalina, Chuacha roja, I-Yana Shungo, Superchola, Wantiva",
+    "MetodoEvaluacion":"Evaluación por cada 9 días",
+    "QueAplicar":"Fosfito de potasio,Propineb,Mancozeb,Hidróxido de cobre",
+    "QueAplicar2":"Cymoxanil,Dimethomorph,Fenamidone,Fluopicolide,Fosetyl-Al,Improvalicarb,Mandipropamid,Mefenoxam,Metiram"
+  }, {
+    "Idioma":2,
+    "Titulo": "Moderately Resistant Varities",
+    "SubTitulo":"Value in Susceptibility Scale (3, 4, 5)",
+    "PeruVariedad":"Amarilis, Liberteña, Perricholi, Unica.",
+    "EcuadorVariedad":"I-Raymipapa, I-Fripapa, I-Estela, Unica, I-Natividad, I Catalina, Chuacha roja, I-Yana Shungo, Superchola, Wantiva",
+    "MetodoEvaluacion":"Evaluation for every 9 days",
+    "QueAplicar":"Di potassium phosphite,Propineb,Mancozeb,Cooper Hydroxide",
+    "QueAplicar2":"Cymoxanil,Dimethomorph,Fenamidone,Fluopicolide,Fosetyl-Al,Improvalicarb,Mandipropamid,Mefenoxam,Metiram"
+  }],
+  "VariedadVulnerable":[{
+    "Idioma":1,
+    "Titulo": "Variedades Susceptibles",
+    "SubTitulo":"Valor en la Escala de Susceptibilidad (6, 7, 8, 9, 10)",
+    "PeruVariedad":"Serranita, Venturana, Chucmarina.",
+    "EcuadorVariedad":"Jubaleña, I-Gabriels, Calvache, I lila Shungo, I Cecilia, Chiwila negra, Leona negra, Puña Negra, Capiro, Uvilla, Tushpa, Coneja negra",
+    "MetodoEvaluacion":"Evaluación por cada 7 días",
+    "QueAplicar":"Fosfito de potasio,Propineb,Mancozeb,Hidróxido de cobre",
+    "QueAplicar2":"Cymoxanil,Dimethomorph,Fenamidone,Fluopicolide,Fosetyl-Al,Improvalicarb,Mandipropamid,Mefenoxam,Metiram"
+    }, {
+    "Idioma":2,
+    "Titulo": "Susceptible Varities",
+    "SubTitulo":"Value in Susceptibility Scale (6, 7, 8, 9, 10)",
+    "PeruVariedad":"Serranita, Venturana, Chucmarina.",
+    "EcuadorVariedad":"Jubaleña, I-Gabriels, Calvache, I lila Shungo, I Cecilia, Chiwila negra, Leona negra, Puña Negra, Capiro, Uvilla, Tushpa, Coneja negra",
+    "MetodoEvaluacion":"Evaluation for every 7 days",
+    "QueAplicar":"Di potassium phosphite,Propineb,Mancozeb,Cooper Hydroxide",
+    "QueAplicar2":"Cymoxanil,Dimethomorph,Fenamidone,Fluopicolide,Fosetyl-Al,Improvalicarb,Mandipropamid,Mefenoxam,Metiram"
+    }
+  ],
+  "FungicidaAplicar":[{
+    "Idioma":1,"Valor1":"No aplicar fungicidas","Valor2":"Aplique Fungicida de Contacto","Valor3":"Aplique Fungicida Sistémico"
+    } ,{
+      "Idioma":2,"Valor1":"No Fungicide spray","Valor2":"Spray Contact Fungicide","Valor3":"Spray Systematic Fungicide"
+    }
+  ],
+  "Ayuda":[
+    {"Idioma":1, "Paso1":"Recuerda como estuvieron los dias anteriores (sin Lluvia o Lluvia) y escoge una opción y dale un click en la rueda [color].",
+      "Paso2":"Recuerda cuando fue la última vez que aplicaste un fungicida en tu parcela y escoge una opción y dale un click en la rueda naranja.", "Paso3":"Aparecerá una recomendación."},
+    {"Idioma":2, "Paso1":"Remember how the previous days were (without rain or rain) and choose an option and click on it in the [color] wheel.",
+      "Paso2":"Remember when it was the last time you applied a fungicide on your plot and choose an option and click on it in the orange wheel.", "Paso3":"A recommendation will appear"}
+  ]
+}

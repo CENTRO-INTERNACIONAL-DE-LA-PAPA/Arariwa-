@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="fill_horizontal"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <TextView
+            android:id="@+id/lbl_info_modoevaluacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="6dp"
+            android:visibility="gone"
+            android:text="Evaluacion por cada 11 días"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/lbl_info_paso1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="3dp"
+            android:text="1. Recuerda como estuvieron los dias anteriores (sin Lluvia o Lluvia) y escoge una opción y dale un click." />
+        <ImageView
+            android:id="@+id/img_info_img1"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:src="@drawable/verde" />
+
+        <TextView
+            android:id="@+id/lbl_info_paso2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="6dp"
+            android:text="2: Recuerda cuando fue la última vez que aplicaste un fungicida en tu parcela y escoge una opción y dale un click." />
+
+        <ImageView
+            android:id="@+id/img_info_img2"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:src="@drawable/verde2" />
+
+        <TextView
+            android:id="@+id/lbl_info_paso3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="3: Aparecerá una recomendación." />
+        <ImageView
+            android:id="@+id/img_info_img3"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/verde3" />
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>
