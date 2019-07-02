@@ -8,7 +8,9 @@ public  class InfoVariedad  {
     public static final int VARIEDAD_RESISTENTE = 1;
     public static final int VARIEDAD_INTERMEDIO = 2;
     public static final int VARIEDAD_VULNERABLE = 3;
-    public static String Titulo = "";
+    public static String Titulo;
+    public static String SubTitulo;
+    public static String Descripcion;
     public static String SubTituloMain = "";
     public static int VARIEDAD_RULETA = -1;
     public static  String getAplicarRecomendacion(int tipo){

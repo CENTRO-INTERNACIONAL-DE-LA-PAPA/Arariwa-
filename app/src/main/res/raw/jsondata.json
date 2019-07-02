@@ -1,5 +1,9 @@
 {
   "Titulo":"Juego de Ruedas", "Title": "Game of wheels",
+  "SubTitulo": "Para la aplicación de fungicidas en el manejo de la rancha de la papa.",
+  "SubTitle": "For the application of fungicides in the management of the late blight of the potato.",
+  "Descripcion": "Esta herramienta te permitirá hacer aplicaciones de fungicidas solo cuando sea necesario y de acuerdo a la variedad de papa que sembraste.",
+  "Description": "This tool will allow you to make applications of fungicides only when necessary and according to the variety of potato you planted.",
   "Paso1":"Escoge la rueda según tu papa sembrada", "Step1":"Choose the roulette according to your sown potato",
   "VariedadResistente":[{
     "Idioma":1,

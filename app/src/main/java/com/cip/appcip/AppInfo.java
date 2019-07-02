@@ -4,6 +4,8 @@ import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
+import Clases.InfoVariedad;
 
 public class AppInfo extends AppCompatActivity {
     @Override
@@ -27,10 +29,12 @@ public class AppInfo extends AppCompatActivity {
                             finish();
                         }
                     }, 5000);
-
                 }
             }, 2000);
-
+        }else{
+            ((TextView)findViewById(R.id.lbl_info_title)).setText(InfoVariedad.Titulo.toUpperCase());
+            ((TextView)findViewById(R.id.lbl_info_subtitle)).setText(InfoVariedad.SubTitulo);
+            ((TextView)findViewById(R.id.lbl_info_descripcion)).setText(InfoVariedad.Descripcion);
         }
     }
 

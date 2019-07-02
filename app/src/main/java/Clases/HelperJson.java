@@ -37,6 +37,8 @@ public class HelperJson {
         getJSON(context);
         InfoVariedad.IDIOMA =  midioma;
         InfoVariedad.Titulo = json.getString(midioma==1?"Titulo":"Title");
+        InfoVariedad.Descripcion = json.getString(midioma==1?"Descripcion":"Description");
+        InfoVariedad.SubTitulo = json.getString(midioma==1?"SubTitulo":"SubTitle");
         InfoVariedad.SubTituloMain = json.getString(midioma==1?"Paso1":"Step1");
         JSONArray jsonArrayVariedadResistente = json.getJSONArray("VariedadResistente");
         for (int i=0; i < jsonArrayVariedadResistente.length(); i++){
