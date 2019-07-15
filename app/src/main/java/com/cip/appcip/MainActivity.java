@@ -13,7 +13,7 @@ import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.Switch;
 import android.widget.TextView;
-import Clases.AppCipAplication;
+
 import Clases.HelperJson;
 import Clases.InfoVariedad;
 
@@ -34,30 +34,25 @@ public class MainActivity extends AppCompatActivity {
             intent.putExtra("Muestra", false);
             startActivityForResult(intent, REQUEST_CODE_INFO);
         } catch (Exception ex) {
-            Utilidad.showToash(this, ex);
+            AppCipAplication.showToash(this, ex);
         }
     }
 
     private void mostrar() {
-        //((TextView)findViewById(R.id.lbl_verde_ecuador)).setText(InfoVariedad.VariedadResistente.EcuadorVariedad);
         ((TextView) findViewById(R.id.lbl_verde_peru)).setText(InfoVariedad.VariedadResistente.PeruVariedad);
         ((TextView) findViewById(R.id.lbl_verde_subtitulo)).setText(InfoVariedad.VariedadResistente.SubTitulo);
         ((TextView) findViewById(R.id.lbl_verde_titulo)).setText(InfoVariedad.VariedadResistente.Titulo);
 
-        //((TextView)findViewById(R.id.lbl_amarillo_ecuador)).setText(InfoVariedad.VariedadIntermedio.EcuadorVariedad);
         ((TextView) findViewById(R.id.lbl_amarillo_peru)).setText(InfoVariedad.VariedadIntermedio.PeruVariedad);
         ((TextView) findViewById(R.id.lbl_amarillo_subtitulo)).setText(InfoVariedad.VariedadIntermedio.SubTitulo);
         ((TextView) findViewById(R.id.lbl_amarillo_titulo)).setText(InfoVariedad.VariedadIntermedio.Titulo);
 
-        //((TextView)findViewById(R.id.lbl_rojo_ecuador)).setText(InfoVariedad.VariedadVulnerable.EcuadorVariedad);
         ((TextView) findViewById(R.id.lbl_rojo_peru)).setText(InfoVariedad.VariedadVulnerable.PeruVariedad);
         ((TextView) findViewById(R.id.lbl_rojo_subtitulo)).setText(InfoVariedad.VariedadVulnerable.SubTitulo);
         ((TextView) findViewById(R.id.lbl_rojo_titulo)).setText(InfoVariedad.VariedadVulnerable.Titulo);
 
-        //setTitle();
-
         android.support.v7.app.ActionBar actionBar = getSupportActionBar();
-        TextView lblTile = ((TextView) actionBar.getCustomView().findViewById(R.id.action_bar_title));
+        TextView lblTile = actionBar.getCustomView().findViewById(R.id.action_bar_title);
         lblTile.setGravity(Gravity.NO_GRAVITY);
         lblTile.setText(InfoVariedad.Titulo);
         ((TextView) actionBar.getCustomView().findViewById(R.id.action_bar_subtitle)).setText(InfoVariedad.SubTituloMain);
@@ -65,21 +60,21 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void verde_click(View view) {
-        Utilidad.cargarTamaño();
+        AppCipAplication.cargarTamaño();
         Intent intent = new Intent(getApplicationContext(), Ruleta.class);
         intent.putExtra("TIPO_VARIEDAD", InfoVariedad.VARIEDAD_RESISTENTE);
         startActivity(intent);
     }
 
     public void amarillo_click(View view) {
-        Utilidad.cargarTamaño();
+        AppCipAplication.cargarTamaño();
         Intent intent = new Intent(getApplicationContext(), Ruleta.class);
         intent.putExtra("TIPO_VARIEDAD", InfoVariedad.VARIEDAD_INTERMEDIO);
         startActivity(intent);
     }
 
     public void rojo_click(View view) {
-        Utilidad.cargarTamaño();
+        AppCipAplication.cargarTamaño();
         Intent intent = new Intent(getApplicationContext(), Ruleta.class);
         intent.putExtra("TIPO_VARIEDAD", InfoVariedad.VARIEDAD_VULNERABLE);
         startActivity(intent);
@@ -101,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }, 20000);
             } catch (Exception ex) {
-                Utilidad.showToash(this, ex);
+                AppCipAplication.showToash(this, ex);
             }
         }
         super.onActivityResult(requestCode, resultCode, data);
@@ -124,7 +119,7 @@ public class MainActivity extends AppCompatActivity {
                     HelperJson.Cargar(MainActivity.this, AppCipAplication.IDIOMA);
                     mostrar();
                 } catch (Exception ex) {
-                    Utilidad.showToash(MainActivity.this, ex);
+                    AppCipAplication.showToash(MainActivity.this, ex);
                 }
             }
         });

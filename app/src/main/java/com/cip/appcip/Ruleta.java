@@ -16,7 +16,7 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import Clases.AppCipAplication;
+
 import Clases.HelperJson;
 import Clases.InfoVariedad;
 
@@ -43,7 +43,7 @@ public class Ruleta extends AppCompatActivity {
             imageView2 = (ImageView) findViewById(R.id.img2);
             imageView3 = (ImageView) findViewById(R.id.img3);
             cargarImagen();
-            int width = Utilidad.getScreenWidth();
+            int width = AppCipAplication.getScreenWidth();
             FrameLayout.LayoutParams params = (FrameLayout.LayoutParams) imageView1.getLayoutParams();
             params.height = width;
             imageView1.setLayoutParams(params);
@@ -67,7 +67,7 @@ public class Ruleta extends AppCompatActivity {
                 }
             });
         } catch (Exception ex) {
-            Utilidad.showToash(this, ex);
+            AppCipAplication.showToash(this, ex);
             finish();
         }
     }

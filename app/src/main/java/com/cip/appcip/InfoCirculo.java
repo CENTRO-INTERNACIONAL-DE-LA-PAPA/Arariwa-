@@ -7,8 +7,6 @@ import android.view.View;
 import android.view.animation.RotateAnimation;
 import android.widget.ImageView;
 
-import Clases.AppCipAplication;
-
 public class InfoCirculo {
     private static final  int TIPO_CLIMA = 1;
     private static final  int TIPO_FUNGICIDA = 2;
@@ -32,7 +30,7 @@ public class InfoCirculo {
                     if (colSelec == Color.TRANSPARENT) {return false; }
                     img_click(positionClickeado);
                 } catch (Exception ex) {
-                    Utilidad.showToash(context, ex);
+                    AppCipAplication.showToash(context, ex);
                 }
                 return true;
             }
@@ -75,7 +73,7 @@ public class InfoCirculo {
             else if(_valor < 0) _valor = 2;
             context.calcular();
         } catch (Exception ex) {
-            Utilidad.showToash(context, ex);
+            AppCipAplication.showToash(context, ex);
         }
     }
     private int getTipoClickeado(int x , int y){

@@ -7,7 +7,6 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
 
 public class HelperJson {
     private static String leerArchivo(Context context) throws Exception{
