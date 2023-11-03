@@ -125,11 +125,11 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_gravity="center_vertical|center_horizontal"
             android:paddingLeft="30dp"
             android:textSize="10dp"
-            android:text="2019 © Centro Internacional de la Papa. Todos los derechos reservados."/>
+            android:text="2019 © Centro Internacional de la Papa. Todos los derechos reservados. v.1.2"/>
     </RelativeLayout>
 </LinearLayout>
 

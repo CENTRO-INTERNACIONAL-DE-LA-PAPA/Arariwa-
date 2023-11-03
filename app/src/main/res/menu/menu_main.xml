@@ -5,15 +5,14 @@
     <item
         android:id="@+id/switchidioma"
         android:orderInCategory="2"
-        android:title=""
-        app:showAsAction="always"
-        android:actionLayout="@layout/switch_idioma"
+        android:title="Cambiar Idioma"
         />
+        <!--android:actionLayout="@layout/switch_idioma"-->
+
     <item
         android:id="@+id/menu_info"
         android:orderInCategory="3"
-        android:title=""
-        app:showAsAction="always"
+        android:title="Info..."
         android:icon="@drawable/icoinfo">
 
     </item>

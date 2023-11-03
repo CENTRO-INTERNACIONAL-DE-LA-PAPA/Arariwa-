@@ -4,8 +4,7 @@
     <item
         android:id="@+id/menu_ayuda"
         android:orderInCategory="0"
-        android:title=""
-        app:showAsAction="always"
+        android:title="Info..."
         android:icon="@drawable/icoinfo">
     </item>
 </menu>

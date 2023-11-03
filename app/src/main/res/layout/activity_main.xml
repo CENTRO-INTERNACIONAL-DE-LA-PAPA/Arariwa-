@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity"
+    android:background="@drawable/info_fondo"
     android:id="@+id/layout_main">
     <ImageView
         android:id="@+id/imageView"
@@ -17,24 +18,25 @@
         android:layout_marginLeft="-20dp"
         android:layout_marginRight="-20dp"
         android:layout_marginTop="-70dp"
-        android:layout_marginBottom="-100dp" />
+        android:layout_marginBottom="-150dp" />
 
     <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical">
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="?attr/selectableItemBackground"
-            android:clickable="true"
-            android:onClick="verde_click"
-            android:orientation="vertical">
+
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -92,40 +94,23 @@
                     android:textAlignment="center"
                     android:textColor="#FFFF" />
 
-
-                <!--
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="ECUADOR: "
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/lbl_verde_ecuador"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="I-Victoria, Libertad, I-Puka Shungo, Carolina" />
-            </LinearLayout>-->
-
             </LinearLayout>
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="150dp"
                 android:background="?attr/selectableItemBackground"
-                android:src="@drawable/main_verde" />
+                android:src="@drawable/main_verde"
+                android:onClick="verde_click"
+                android:layout_margin="10dp"
+                />
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="?attr/selectableItemBackground"
-            android:onClick="amarillo_click"
+
+            android:layout_weight="1"
             android:orientation="vertical">
 
             <LinearLayout
@@ -184,38 +169,20 @@
                     android:text="Valor en la Escala de Susceptibilidad (0, 1, 2)"
                     android:textAlignment="center"
                     android:textColor="@color/colorPlomo" />
-
-                <!--LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="ECUADOR: "
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/lbl_amarillo_ecuador"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="I-Victoria, Libertad, I-Puka Shungo, Carolina" />
-            </LinearLayout>-->
             </LinearLayout>
+
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="150dp"
                 android:background="?attr/selectableItemBackground"
+                android:onClick="amarillo_click"
+                android:layout_margin="10dp"
                 android:src="@drawable/main_amarillo" />
         </LinearLayout>
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:onClick="rojo_click"
             android:orientation="vertical"
             android:background="?attr/selectableItemBackground">
 
@@ -275,34 +242,14 @@
                     android:text="Valor en la Escala de Susceptibilidad (0, 1, 2)"
                     android:textAlignment="center"
                     android:textColor="@android:color/background_light" />
-
-
-                <!--LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="ECUADOR: "
-                    android:textColor="@android:color/background_light"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/lbl_rojo_ecuador"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="I-Victoria, Libertad, I-Puka Shungo, Carolina"
-                    android:textColor="@android:color/background_light" />
-            </LinearLayout-->
             </LinearLayout>
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="150dp"
+                    android:layout_margin="10dp"
                     android:background="?attr/selectableItemBackground"
-                    android:src="@drawable/main_rojo" />
+                    android:src="@drawable/main_rojo"
+                    android:onClick="rojo_click"/>
         </LinearLayout>
 
 

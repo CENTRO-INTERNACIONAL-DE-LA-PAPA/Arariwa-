@@ -97,7 +97,7 @@ public class Ruleta extends AppCompatActivity {
         android.support.v7.app.ActionBar actionBar = getSupportActionBar();
         if (actionBar == null) return;
         actionBar.setCustomView(R.layout.action_bar_title);
-        actionBar.setDisplayHomeAsUpEnabled(true);
+        //actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setDisplayShowCustomEnabled(true);
         TextView lblTile = ((TextView) actionBar.getCustomView().findViewById(R.id.action_bar_title));
         lblTile.setGravity(Gravity.CENTER_VERTICAL | Gravity.CENTER_HORIZONTAL);

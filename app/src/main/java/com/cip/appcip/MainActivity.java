@@ -87,12 +87,12 @@ public class MainActivity extends AppCompatActivity {
                 HelperJson.Cargar(this, AppCipAplication.IDIOMA_ESPAÑOL);
                 mostrar();
                 ImageView layoutmain = (ImageView) findViewById(R.id.imageView);
-                layoutmain.animate().translationY(-130).setDuration(20000);
+                layoutmain.animate().translationY(-100).setDuration(20000);
                 new Handler().postDelayed(new Runnable() {
                     @Override
                     public void run() {
                         ImageView layoutmain1 = (ImageView) MainActivity.this.findViewById(R.id.imageView);
-                        layoutmain1.animate().translationY(80).setDuration(15000);
+                        layoutmain1.animate().translationY(70).setDuration(15000);
                     }
                 }, 20000);
             } catch (Exception ex) {
@@ -105,12 +105,12 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_main, menu);
-        menu.findItem(R.id.switchidioma).setActionView(R.layout.switch_idioma);
-        final Switch swIdioma = (Switch) menu.findItem(R.id.switchidioma).getActionView().findViewById(R.id.switch1);
-        swIdioma.setTextOff("ES");
-        swIdioma.setTextOn("EN");
-        swIdioma.setText("");
-        swIdioma.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+        //menu.findItem(R.id.switchidioma).setActionView(R.layout.switch_idioma);
+        //final Switch swIdioma = (Switch) menu.findItem(R.id.switchidioma).getActionView().findViewById(R.id.switch1);
+        //swIdioma.setTextOff("ES");
+        //swIdioma.setTextOn("EN");
+        //swIdioma.setText("");
+        /*swIdioma.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 try {
@@ -122,7 +122,7 @@ public class MainActivity extends AppCompatActivity {
                     AppCipAplication.showToash(MainActivity.this, ex);
                 }
             }
-        });
+        });*/
         return true;
     }
     @Override
@@ -131,6 +131,14 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(getApplicationContext(), AppInfo.class);
             intent.putExtra("Muestra", true);
             startActivity(intent);
+        }else if(item.getItemId() == R.id.switchidioma){
+            AppCipAplication.IDIOMA = (AppCipAplication.IDIOMA == AppCipAplication.IDIOMA_ESPAÑOL ? AppCipAplication.IDIOMA_INGLES : AppCipAplication.IDIOMA_ESPAÑOL);
+            try {
+                HelperJson.Cargar(MainActivity.this, AppCipAplication.IDIOMA);
+                mostrar();
+            } catch (Exception ex) {
+                AppCipAplication.showToash(MainActivity.this, ex);
+            }
         }
         return super.onOptionsItemSelected(item);
     }
