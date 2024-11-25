@@ -1,4 +1,4 @@
-package com.cip.appcip;
+package com.cip.appcip2;
 import android.content.Context;
 import android.content.res.Resources;
 import android.widget.Toast;

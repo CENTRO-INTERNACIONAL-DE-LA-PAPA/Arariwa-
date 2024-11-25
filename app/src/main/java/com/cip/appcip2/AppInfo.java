@@ -1,4 +1,4 @@
-package com.cip.appcip;
+package com.cip.appcip2;
 
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;

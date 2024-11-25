@@ -1,4 +1,4 @@
-package com.cip.appcip;
+package com.cip.appcip2;
 
 import android.content.Intent;
 import android.os.Handler;
@@ -9,9 +9,7 @@ import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.CompoundButton;
 import android.widget.ImageView;
-import android.widget.Switch;
 import android.widget.TextView;
 
 import Clases.HelperJson;

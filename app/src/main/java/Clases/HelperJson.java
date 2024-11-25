@@ -1,7 +1,7 @@
 package Clases;
 
 import android.content.Context;
-import com.cip.appcip.R;
+import com.cip.appcip2.R;
 
 import org.json.JSONArray;
 import org.json.JSONObject;

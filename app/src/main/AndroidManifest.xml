@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.cip.appcip">
+    package="com.cip.appcip2">
 
     <application
         android:allowBackup="true"
@@ -11,7 +11,7 @@
         android:theme="@style/AppTheme">
         <activity
             android:exported="true"
-            android:name=".MainActivity"
+            android:name="com.cip.appcip2.MainActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -19,8 +19,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Ruleta" android:screenOrientation="portrait" />
-        <activity android:name=".AppInfo" android:screenOrientation="portrait">
+        <activity android:name="com.cip.appcip2.Ruleta" android:screenOrientation="portrait" />
+        <activity android:name="com.cip.appcip2.AppInfo" android:screenOrientation="portrait">
         </activity>
     </application>
 
