@@ -1,4 +1,4 @@
-package com.cip.appcip2;
+package com.cip.appcip3;
 
 import android.content.Intent;
 import android.os.Handler;
@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
                 actionBar.setDisplayShowCustomEnabled(true);
                 actionBar.setCustomView(R.layout.action_bar_title);
             }
+            HelperJson.Cargar(MainActivity.this, AppCipAplication.IDIOMA);
             Intent intent = new Intent(getApplicationContext(), AppInfo.class);
             intent.putExtra("Muestra", false);
             startActivityForResult(intent, REQUEST_CODE_INFO);

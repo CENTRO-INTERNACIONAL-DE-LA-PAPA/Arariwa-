@@ -1,4 +1,4 @@
-package com.cip.appcip2;
+package com.cip.appcip3;
 
 import android.graphics.Bitmap;
 import android.graphics.Color;

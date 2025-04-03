@@ -1,4 +1,4 @@
-package com.cip.appcip2;
+package com.cip.appcip3;
 
 import org.junit.Test;
 

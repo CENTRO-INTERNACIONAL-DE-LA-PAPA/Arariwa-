@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:gravity="center_horizontal"
+    android:orientation="vertical"
     android:paddingTop="15dp"
     tools:context=".AppInfo">
 
@@ -15,122 +15,147 @@
         android:layout_weight="12"
         android:gravity="center_vertical|center_horizontal"
         android:orientation="vertical"
-        android:padding="8dp">
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"        >
+
+
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="250dp"
             android:layout_height="100dp"
             android:background="#5FFF"
-            app:srcCompat="@drawable/logo" />
-
+            app:srcCompat="@drawable/logo2"
+            android:layout_marginBottom="30dp"/>
+        <ImageView
+            android:id="@+id/imageViewphyto"
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:background="#5FFF"
+            app:srcCompat="@drawable/phyto" />
         <TextView
             android:id="@+id/lbl_info_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
-            android:paddingTop="10dp"
-            android:text="JUEGO DE RUEDAS"
-            android:textSize="16sp"
             android:paddingBottom="10dp"
-            android:textStyle="bold" />
-        <View android:layout_width="match_parent"
-            android:layout_height="1px"
-            android:background="@color/colorPlomo"/>
+            android:text="PhytoControl 360"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#594a42"
+            />
+
         <TextView
             android:id="@+id/lbl_info_subtitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             android:paddingTop="10dp"
-            android:text="Aplicativo para la aplicación de fungicidas en el manejo de la rancha de la papa"
+            android:textColor="#594a42"
+            android:text="string/inf_subtitle"
             android:textStyle="bold" />
+
         <LinearLayout
+            android:id="@+id/layout_masinfo"
             android:layout_width="match_parent"
-            android:orientation="vertical"
+            android:layout_height="wrap_content"
             android:background="#9FFF"
-            android:paddingBottom="20dp"
             android:gravity="center_horizontal"
-            android:layout_height="wrap_content">
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+
             <TextView
-                android:id="@+id/lbl_info_descripcion"
+                android:id="@+id/lbl_info_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:paddingTop="10dp"
-                android:text="Esta herramienta te permitirá hacer aplicaciones de fungicidas solo cuando sea necesario y de acuerdo a la variedad de papa que sembraste."
-                android:textSize="12dp" />
-        </LinearLayout>
-    </LinearLayout>
-<LinearLayout
-    android:id="@+id/layout_masinfo"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_horizontal|center_vertical"
-        android:paddingBottom="5dp">
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+                android:text="string/inf_text"
+                android:textSize="12dp"
+                android:textColor="#8d827c"
+                />
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="25dp"
-                android:layout_gravity="center_vertical"
-                android:src="@drawable/web" />
+                android:layout_marginTop="20dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/iconoweb"/>
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_gravity="center_vertical"
-                android:autoLink="all"
-                android:clickable="true"
-                android:gravity="center_vertical"
-                android:paddingRight="10dp"
-                android:text="https://cipotato.org/"
-                android:textSize="12dp" />
-        </LinearLayout>
-            <LinearLayout
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="www.cipotato.org"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:textColor="#8d827c"/>
+            <ImageView
+                android:layout_marginTop="15dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/iconomail"
+                />
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="25dp"
-                    android:layout_gravity="center_vertical"
-                    android:src="@drawable/email"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:text="cip-phytocontrol360support@cgiar.org"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:textColor="#8d827c"
+                />
+        </LinearLayout>
 
-                    android:textSize="12dp"
-                    android:autoLink="all"
-                    android:clickable="true"
-                    android:gravity="center_vertical"
-                    android:text="w.perez@cgiar.org"/>
-            </LinearLayout>
+
+
     </LinearLayout>
-    <RelativeLayout
-        android:gravity="bottom|center_horizontal"
-        android:layout_gravity="bottom|center_horizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="15dp"
-            android:layout_gravity="center_vertical"
-            android:src="@drawable/copyrigth"/>
+
+
+    <LinearLayout
+        android:id="@+id/layout_info_foot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        >
+
         <TextView
-            android:layout_width="wrap_content"
+            android:id="@+id/lbl_info_foot"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_vertical|center_horizontal"
-            android:layout_gravity="center_vertical|center_horizontal"
-            android:paddingLeft="30dp"
-            android:textSize="10dp"
-            android:text="2019 © Centro Internacional de la Papa. Todos los derechos reservados. v.1.2"/>
-    </RelativeLayout>
-</LinearLayout>
+
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center_horizontal"
+            android:text="string/inf_foot"
+            android:textColor="#613b15"
+            android:textSize="11sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:src="@drawable/copyr" />
+
+            <TextView
+                android:id="@+id/lbl_info_footcopyr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="string/inf_text"
+                android:textColor="#6e6f71"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
 
 </LinearLayout>

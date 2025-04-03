@@ -12,6 +12,8 @@ public  class InfoVariedad {
     public static String SubTitulo;
     public static String Descripcion;
     public static String SubTituloMain = "";
+    public static String InfoFoot = "";
+    public static String InfoCopyR = "";
     public static int VARIEDAD_RULETA = -1;
 
     public static String getAplicarRecomendacion(int tipo) {

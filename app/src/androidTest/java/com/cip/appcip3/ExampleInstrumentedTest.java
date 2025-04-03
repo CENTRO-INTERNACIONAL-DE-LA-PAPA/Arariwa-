@@ -1,4 +1,4 @@
-package com.cip.appcip2;
+package com.cip.appcip3;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

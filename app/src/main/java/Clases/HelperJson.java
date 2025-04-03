@@ -1,7 +1,7 @@
 package Clases;
 
 import android.content.Context;
-import com.cip.appcip2.R;
+import com.cip.appcip3.R;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -39,6 +39,8 @@ public class HelperJson {
         InfoVariedad.Descripcion = json.getString(midioma==1?"Descripcion":"Description");
         InfoVariedad.SubTitulo = json.getString(midioma==1?"SubTitulo":"SubTitle");
         InfoVariedad.SubTituloMain = json.getString(midioma==1?"Paso1":"Step1");
+        InfoVariedad.InfoFoot = json.getString(midioma==1?"info_foot":"info_foot_en");
+        InfoVariedad.InfoCopyR = json.getString(midioma==1?"info_copyr":"info_copyr_en");
         JSONArray jsonArrayVariedadResistente = json.getJSONArray("VariedadResistente");
         for (int i=0; i < jsonArrayVariedadResistente.length(); i++){
             JSONObject jitem = (JSONObject)jsonArrayVariedadResistente.get(i);

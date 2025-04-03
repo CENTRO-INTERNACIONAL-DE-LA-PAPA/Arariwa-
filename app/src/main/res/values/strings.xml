@@ -1,5 +1,9 @@
 <resources>
-    <string name="app_name">Juego de Ruedas</string>
-    <string name="app_title">Juego de ruedas</string>
-    <string name="app_title_en">Game of wheels</string>
+    <string name="app_name">PhytoControl 360</string>
+    <string name="app_title">PhytoControl 360</string>
+    <string name="app_title_en">PhytoControl 360</string>
+
+
+
+
 </resources>

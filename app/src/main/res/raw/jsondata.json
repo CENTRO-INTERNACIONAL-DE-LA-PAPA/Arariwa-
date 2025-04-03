@@ -1,10 +1,14 @@
 {
-  "Titulo":"Juego de Ruedas", "Title": "Game of wheels",
-  "SubTitulo": "Para la aplicación de fungicidas en el manejo de la rancha de la papa.",
-  "SubTitle": "For the application of fungicides in the management of the late blight of the potato.",
+  "Titulo":"PhytoControl 360", "Title": "PhytoControl 360",
+  "SubTitulo": "PARA APLICACIÓN DE FUNGICIDAS EN EL MANEJO DE LA RANCHA DE LA PAPA.",
+  "SubTitle": "FOR THE APPLICATION OF FUNGICIDES IN THE MANAGEMENT OF THE LATE BLIGHT OF THE POTATO.",
   "Descripcion": "Esta herramienta te permitirá hacer aplicaciones de fungicidas solo cuando sea necesario y de acuerdo a la variedad de papa que sembraste.",
   "Description": "This tool will allow you to make applications of fungicides only when necessary and according to the variety of potato you planted.",
   "Paso1":"Escoge la rueda según tu papa sembrada", "Step1":"Choose the roulette according to your sown potato",
+  "info_foot":"El CIP agradece a los donantes y organizaciones que apoyan globalmente su trabajo a través de sus contribuciones al Fondo Fiduciario del CGIAR.: www.cgiar.org/funders",
+  "info_foot_en":"CIP thanks all donors and organizations that globally support its work through their contributions to the CGIAR Trust Fund: www.cgiar.org/funders",
+  "info_copyr":"© Esta publicación está registrada por el Centro Internacional de la Papa (CIP). Está licenciada para su uso bajo la Licencia Internacional de Atribución 4.0 de Creative.",
+  "info_copyr_en":"© This publication is copyrighted by the International Potato Center (CIP). It is licensed for use under the Creative Commons Attribution 4.0 International License",
   "VariedadResistente":[{
     "Idioma":1,
     "Titulo": "Variedades Resistentes",
